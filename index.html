@@ -1,134 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Orbi Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for Orbi." />
+  <meta name="description" content="Privacy Policy for the Orbi mobile game.">
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0d1230;
-      --panel: #172154;
-      --text: #f4f7ff;
-      --muted: #b9c4ee;
-      --accent: #38e8ff;
-      --border: rgba(255,255,255,.16);
-    }
+    :root { color-scheme: light dark; --bg:#f7f8fb; --surface:#fff; --text:#171923; --muted:#5f6675; --line:#d9dde7; --accent:#087b8f; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#101218; --surface:#171a22; --text:#f3f5f8; --muted:#b2b8c5; --line:#343947; --accent:#58d9eb; } }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at 50% -10%, #263389 0, var(--bg) 48%, #070a1f 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    main {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 56px 0 72px;
-    }
-    header {
-      padding: 28px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: linear-gradient(180deg, rgba(56,232,255,.10), rgba(23,33,84,.88));
-      box-shadow: 0 18px 48px rgba(0,0,0,.32);
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(32px, 7vw, 56px);
-      line-height: 1;
-      letter-spacing: .02em;
-    }
-    .date {
-      margin: 0;
-      color: var(--muted);
-      font-weight: 700;
-    }
-    section {
-      margin-top: 22px;
-      padding: 24px 28px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: rgba(23,33,84,.72);
-    }
-    h2 {
-      margin: 0 0 10px;
-      font-size: 22px;
-      line-height: 1.2;
-    }
-    p { margin: 10px 0 0; }
-    ul { margin: 10px 0 0; padding-left: 22px; }
-    a { color: var(--accent); font-weight: 800; }
-    .warning {
-      border-color: rgba(255,213,95,.45);
-      background: rgba(255,180,40,.10);
-      color: #fff3c4;
-    }
-    footer {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 14px;
-      text-align: center;
-    }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(780px,calc(100% - 32px)); margin:auto; padding:40px 0 64px; }
+    header { padding-bottom:24px; border-bottom:1px solid var(--line); }
+    nav { display:flex; gap:18px; margin-bottom:28px; font-size:14px; }
+    a { color:var(--accent); font-weight:650; }
+    h1 { margin:0 0 6px; font-size:clamp(32px,7vw,48px); line-height:1.1; letter-spacing:0; }
+    h2 { margin:34px 0 8px; font-size:22px; line-height:1.25; letter-spacing:0; }
+    p, ul { margin:8px 0; }
+    .date, footer { color:var(--muted); }
+    .summary { margin:28px 0; padding:18px; border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:6px; background:var(--surface); }
+    footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; }
   </style>
 </head>
 <body>
   <main>
-    <header>
-      <h1>Orbi Privacy Policy</h1>
-      <p class="date">Effective date: 2026-08-02</p>
-    </header>
+    <nav aria-label="Legal pages"><a href="index.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+    <header><h1>Orbi Privacy Policy</h1><p class="date">Effective and last updated: August 17, 2026</p></header>
+    <div class="summary"><strong>Summary:</strong> Orbi works without a game account. Progress and settings stay on the device. Google Firebase Analytics and Crashlytics provide anonymous usage metrics and crash diagnostics. Advertising ID collection and ad personalization are disabled.</div>
 
-    <section>
-      <h2>Current Release</h2>
-      <p>Orbi is designed for the first Google Play release without active advertising SDKs, analytics SDKs, in-app purchase SDKs, game accounts, or a game backend server.</p>
-    </section>
+    <h2>Scope</h2>
+    <p>This policy explains how OBRIY STUDIO ("we", "us", or "our") handles information in the Android game Orbi. It applies to version 1.0.0 and other versions that link to this policy.</p>
 
-    <section>
-      <h2>Data Stored Locally On Your Device</h2>
-      <p>The current version may store the following information locally on your device so the game can work between sessions:</p>
-      <ul>
-        <li>Player profile name entered in the game.</li>
-        <li>Game progress, unlocked maps, run history, contracts, rank, and rewards.</li>
-        <li>In-game balances such as gold and crystals.</li>
-        <li>Settings such as language, music volume, sound effects volume, and haptics.</li>
-      </ul>
-      <p>This local information is not sent to us in the current release.</p>
-    </section>
+    <h2>Information Stored On The Device</h2>
+    <p>Orbi may store the following information locally to preserve gameplay between sessions:</p>
+    <ul><li>profile name entered by the player;</li><li>progress, unlocked arenas, contracts, rank, rewards, and run history;</li><li>in-game gold and crystal balances;</li><li>language, music, sound effects, and haptic settings;</li><li>local onboarding and tutorial state.</li></ul>
+    <p>The profile name and exact local save data are not included in Firebase events.</p>
 
-    <section>
-      <h2>Data We Do Not Collect In The Current Release</h2>
-      <p>In the current release, we do not operate a server that receives your gameplay profile or progress. We do not collect account registration data, email addresses, phone numbers, precise location, contacts, photos, or messages.</p>
-    </section>
+    <h2>Information We Collect Or Share</h2>
+    <p>Firebase Analytics may process a random app-instance identifier, app lifecycle and session information, gameplay events such as run starts and ends, run duration, level progression and upgrade choices, app version, language, device model, operating-system information, and a coarse region derived by Google from a masked IP address.</p>
+    <p>Firebase Crashlytics may process installation identifiers, crash and non-fatal error traces, diagnostic state, app version, device model, and operating-system information. Orbi does not set a Firebase user ID, send the profile name, or attach exact local save data. Advertising ID collection, ad personalization, advertising SDKs, accounts, cloud saves, and payment SDKs are not enabled.</p>
+    <p>Google Play and the device manufacturer may independently process information under their own terms and privacy policies.</p>
 
-    <section>
-      <h2>Local Data Deletion</h2>
-      <p>Because the current release stores data locally on your device, you can remove local game data by uninstalling the app or clearing app storage in Android system settings.</p>
-    </section>
+    <h2>Use, Retention, And Deletion</h2>
+    <p>Local data provides game saves and continuity. Firebase data is used to measure audience size, sessions, retention, gameplay funnels and feature use, and to diagnose stability problems. It is not used for behavioral advertising or cross-app tracking.</p>
+    <p>Local data remains until the player clears app storage or uninstalls Orbi. Firebase retains analytics and diagnostics according to our Firebase and Google Analytics retention settings. Orbi has no user account and does not set a Firebase user ID, so we generally cannot associate an installation record with a named person.</p>
 
-    <section>
-      <h2>Advertising, Analytics, And Purchases</h2>
-      <p>The current release does not enable real-money purchases, rewarded ads, or advertising/analytics data collection. Future versions may add Google Play Billing, advertising, analytics, crash reporting, cloud saves, or account features. If that happens, this policy, the Google Play Data Safety form, and any required consent screens will be updated before those features are released.</p>
-    </section>
+    <h2>Security</h2>
+    <p>Firebase data is encrypted in transit. We avoid Advertising ID and billing permissions and limit custom events to gameplay and diagnostics. No storage or transmission method is completely secure.</p>
 
-    <section>
-      <h2>Children</h2>
-      <p>The current release is not intended to collect personal information from children. Before any advertising, analytics, account, or online feature is added, the target audience, content rating, and child-directed treatment requirements must be reviewed.</p>
-    </section>
+    <h2>Children</h2>
+    <p>The game is not directed to children below the applicable digital-consent age. It has no chat, accounts, user-generated content, behavioral advertising, or online social features. Advertising identifiers and ad personalization are disabled.</p>
 
-    <section>
-      <h2>Third-Party SDKs</h2>
-      <p>The current app build uses game/runtime dependencies needed to run the game UI and gameplay. Before enabling any SDK that sends data off the device, we maintain an SDK inventory and update the privacy disclosures.</p>
-    </section>
+    <h2>International Transfers</h2>
+    <p>Google may process Firebase data on servers outside the player's country under Google's terms and data-protection arrangements.</p>
 
-    <section class="warning">
-      <h2>Contact</h2>
-      <p>Contact email for privacy requests: <strong>support@obriystudio.app</strong></p>
-    </section>
+    <h2>Third-Party Services</h2>
+    <p>Orbi uses Google Firebase Analytics and Firebase Crashlytics. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
 
-    <footer>Orbi Privacy Policy</footer>
+    <h2>Future Features</h2>
+    <p>Before a release adds advertising, purchases, cloud saves, accounts, or other online services, we will update this policy, Google Play Data Safety answers, the SDK inventory, and required controls.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy for product, legal, or technical changes. The revised policy will show a new last-updated date.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy or support questions, email <a href="mailto:support@obriystudio.app">support@obriystudio.app</a>.</p>
+    <footer>OBRIY STUDIO · Orbi</footer>
   </main>
 </body>
 </html>
