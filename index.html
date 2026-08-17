@@ -3,70 +3,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Orbi Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for the Orbi mobile game.">
-  <style>
-    :root { color-scheme: light dark; --bg:#f7f8fb; --surface:#fff; --text:#171923; --muted:#5f6675; --line:#d9dde7; --accent:#087b8f; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#101218; --surface:#171a22; --text:#f3f5f8; --muted:#b2b8c5; --line:#343947; --accent:#58d9eb; } }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
-    main { width:min(780px,calc(100% - 32px)); margin:auto; padding:40px 0 64px; }
-    header { padding-bottom:24px; border-bottom:1px solid var(--line); }
-    nav { display:flex; gap:18px; margin-bottom:28px; font-size:14px; }
-    a { color:var(--accent); font-weight:650; }
-    h1 { margin:0 0 6px; font-size:clamp(32px,7vw,48px); line-height:1.1; letter-spacing:0; }
-    h2 { margin:34px 0 8px; font-size:22px; line-height:1.25; letter-spacing:0; }
-    p, ul { margin:8px 0; }
-    .date, footer { color:var(--muted); }
-    .summary { margin:28px 0; padding:18px; border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:6px; background:var(--surface); }
-    footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; }
-  </style>
+  <meta name="theme-color" content="#090b14">
+  <meta name="description" content="Orbi is a fast arena survival game. Build powerful upgrades, survive alien swarms, and climb the Space Rank.">
+  <meta property="og:title" content="Orbi - Arena Survival">
+  <meta property="og:description" content="Survive the rift. Build your loadout. Climb the Space Rank.">
+  <meta property="og:image" content="https://orbi.obriystudio.app/assets/orbi-hero.png">
+  <meta property="og:url" content="https://orbi.obriystudio.app/">
+  <meta property="og:type" content="website">
+  <title>Orbi - Arena Survival</title>
+  <link rel="canonical" href="https://orbi.obriystudio.app/">
+  <link rel="icon" href="assets/orbi-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main>
-    <nav aria-label="Legal pages"><a href="index.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
-    <header><h1>Orbi Privacy Policy</h1><p class="date">Effective and last updated: August 17, 2026</p></header>
-    <div class="summary"><strong>Summary:</strong> Orbi works without a game account. Progress and settings stay on the device. Google Firebase Analytics and Crashlytics provide anonymous usage metrics and crash diagnostics. Advertising ID collection and ad personalization are disabled.</div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Orbi home">
+        <img src="assets/orbi-icon.png" alt="" width="38" height="38">
+        <span>ORBI</span>
+      </a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation">Menu</button>
+      <nav class="site-nav" id="site-navigation" data-navigation aria-label="Main navigation">
+        <a href="#game">Game</a>
+        <a href="#screens">Screens</a>
+        <a href="support/">Support</a>
+        <a href="privacy-policy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>Scope</h2>
-    <p>This policy explains how OBRIY STUDIO ("we", "us", or "our") handles information in the Android game Orbi. It applies to version 1.0.0 and other versions that link to this policy.</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__art" src="assets/orbi-hero.png" alt="Orbi astronaut facing an alien invasion" width="1024" height="500">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow">Arena survival on Android</p>
+        <h1 id="hero-title">ORBI</h1>
+        <p class="hero__copy">Survive the rift, evolve your arsenal, and turn every run into a new build.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#game">Explore the game</a>
+          <span class="button button--secondary" aria-label="Google Play release coming soon">
+            <span aria-hidden="true">▶</span>
+            <span class="button__store"><small>Coming soon on</small>Google Play</span>
+          </span>
+        </div>
+      </div>
+    </section>
 
-    <h2>Information Stored On The Device</h2>
-    <p>Orbi may store the following information locally to preserve gameplay between sessions:</p>
-    <ul><li>profile name entered by the player;</li><li>progress, unlocked arenas, contracts, rank, rewards, and run history;</li><li>in-game gold and crystal balances;</li><li>language, music, sound effects, and haptic settings;</li><li>local onboarding and tutorial state.</li></ul>
-    <p>The profile name and exact local save data are not included in Firebase events.</p>
+    <section class="section section--light" id="game" aria-labelledby="game-title">
+      <div class="section__inner">
+        <div class="section-heading">
+          <p class="eyebrow">One run. Many builds.</p>
+          <h2 id="game-title">Enter fast. Adapt faster.</h2>
+          <p>Orbi is a compact survival action game built around readable combat, meaningful upgrades, and short runs that invite another attempt.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature__number" aria-hidden="true">01</div>
+            <h3>Survive the swarm</h3>
+            <p>Move through hostile arenas, manage space, and outlast waves of close-range threats, shooters, and heavy enemies.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__number" aria-hidden="true">02</div>
+            <h3>Shape your arsenal</h3>
+            <p>Combine spread shots, orbit blades, chain lightning, poison, frost, shields, and other upgrades into a build that feels different.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__number" aria-hidden="true">03</div>
+            <h3>Keep climbing</h3>
+            <p>Complete contracts, collect rewards, and push your Space Rank forward between runs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <h2>Information We Collect Or Share</h2>
-    <p>Firebase Analytics may process a random app-instance identifier, app lifecycle and session information, gameplay events such as run starts and ends, run duration, level progression and upgrade choices, app version, language, device model, operating-system information, and a coarse region derived by Google from a masked IP address.</p>
-    <p>Firebase Crashlytics may process installation identifiers, crash and non-fatal error traces, diagnostic state, app version, device model, and operating-system information. Orbi does not set a Firebase user ID, send the profile name, or attach exact local save data. Advertising ID collection, ad personalization, advertising SDKs, accounts, cloud saves, and payment SDKs are not enabled.</p>
-    <p>When Orbi checks for a required Google Play update, Google Play may process device metadata, the installed app version, and the list of installed modules and asset packs to determine whether an update is available and its expected size. Google states that this Play Core request data is encrypted, is not transferred to third parties, and is deleted after a fixed retention period.</p>
-    <p>Google Play and the device manufacturer may independently process information under their own terms and privacy policies.</p>
+    <section class="section section--violet" id="screens" aria-labelledby="screens-title">
+      <div class="section__inner">
+        <div class="section-heading">
+          <p class="eyebrow">From launch to last stand</p>
+          <h2 id="screens-title">The run at a glance.</h2>
+          <p>Choose your objective, step into the arena, and bring the rewards back to your next attempt.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="assets/screen-menu.jpg" alt="Orbi main menu with Space Rank and contract progress" width="720" height="1536" loading="lazy">
+            <figcaption>Prepare your next run</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screen-combat.jpg" alt="Orbi hero fighting enemies in the arena" width="720" height="1536" loading="lazy">
+            <figcaption>Adapt under pressure</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screen-results.jpg" alt="Orbi run results with rewards and rank progress" width="720" height="1536" loading="lazy">
+            <figcaption>Earn progress every run</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-    <h2>Use, Retention, And Deletion</h2>
-    <p>Local data provides game saves and continuity. Firebase data is used to measure audience size, sessions, retention, gameplay funnels and feature use, and to diagnose stability problems. It is not used for behavioral advertising or cross-app tracking.</p>
-    <p>Local data remains until the player clears app storage or uninstalls Orbi. Firebase retains analytics and diagnostics according to our Firebase and Google Analytics retention settings. Orbi has no user account and does not set a Firebase user ID, so we generally cannot associate an installation record with a named person.</p>
-
-    <h2>Security</h2>
-    <p>Firebase data is encrypted in transit. We avoid Advertising ID and billing permissions and limit custom events to gameplay and diagnostics. No storage or transmission method is completely secure.</p>
-
-    <h2>Children</h2>
-    <p>The game is not directed to children below the applicable digital-consent age. It has no chat, accounts, user-generated content, behavioral advertising, or online social features. Advertising identifiers and ad personalization are disabled.</p>
-
-    <h2>International Transfers</h2>
-    <p>Google may process Firebase data on servers outside the player's country under Google's terms and data-protection arrangements.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>Orbi uses Google Firebase Analytics and Firebase Crashlytics. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
-
-    <h2>Future Features</h2>
-    <p>Before a release adds advertising, purchases, cloud saves, accounts, or other online services, we will update this policy, Google Play Data Safety answers, the SDK inventory, and required controls.</p>
-
-    <h2>Changes</h2>
-    <p>We may update this policy for product, legal, or technical changes. The revised policy will show a new last-updated date.</p>
-
-    <h2>Contact</h2>
-    <p>For privacy or support questions, email <a href="mailto:support@obriystudio.app">support@obriystudio.app</a>.</p>
-    <footer>OBRIY STUDIO · Orbi</footer>
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="cta-band__inner">
+        <div>
+          <h2 id="cta-title">The rift is opening.</h2>
+          <p>Orbi is preparing for its first Android release. Store access will appear here when the public listing is live.</p>
+        </div>
+        <a class="button" href="support/">Contact support</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div>
+          <p class="site-footer__title">ORBI</p>
+          <p class="site-footer__contact">A game by OBRIY STUDIO · <a href="mailto:support@obriystudio.app">support@obriystudio.app</a></p>
+        </div>
+        <nav class="footer-links" aria-label="Legal navigation">
+          <a href="privacy-policy/">Privacy Policy</a>
+          <a href="terms-of-service/">Terms of Service</a>
+          <a href="cookies-policy/">Cookies Policy</a>
+          <a href="support/">Support</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">© 2026 OBRIY STUDIO. All rights reserved.</div>
+    </div>
+  </footer>
 </body>
 </html>
