@@ -165,12 +165,26 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: saturate(1.2) brightness(1.11) contrast(1.04);
+  transform: scale(1.015);
+  transform-origin: 58% 48%;
+  animation: hero-drift 14s ease-in-out infinite alternate;
 }
 
 .hero__shade {
   z-index: -1;
-  background: rgba(5, 7, 15, 0.28);
-  box-shadow: inset 0 -250px 180px rgba(5, 7, 15, 0.78);
+  background: rgba(5, 7, 15, 0.12);
+  box-shadow: inset 0 -230px 170px rgba(5, 7, 15, 0.58);
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1.015) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: scale(1.045) translate3d(-0.35%, -0.25%, 0);
+  }
 }
 
 .hero__content {
@@ -750,21 +764,29 @@ a {
   }
 
   .hero {
-    min-height: 88svh;
+    min-height: 78svh;
   }
 
   .hero__art {
-    object-position: 62% center;
+    inset: 68px auto auto 50%;
+    width: 120%;
+    height: auto;
+    max-width: none;
+    object-fit: contain;
+    object-position: center top;
+    animation: none;
+    transform: translateX(-50%);
   }
 
   .hero__shade {
-    background: rgba(5, 7, 15, 0.42);
-    box-shadow: inset 0 -320px 180px rgba(5, 7, 15, 0.82);
+    background: rgba(5, 7, 15, 0.2);
+    box-shadow: inset 0 -300px 180px rgba(5, 7, 15, 0.64);
   }
 
   .hero__content {
-    min-height: calc(88svh - 68px);
-    padding: 44px 0 38px;
+    min-height: calc(78svh - 68px);
+    padding: 62vw 0 30px;
+    justify-content: flex-start;
   }
 
   .hero__copy {
