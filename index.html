@@ -27,7 +27,7 @@
       <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation">Menu</button>
       <nav class="site-nav" id="site-navigation" data-navigation aria-label="Main navigation">
         <a href="#game">Game</a>
-        <a href="#screens">Screens</a>
+        <a href="#arsenal">Arsenal</a>
         <a href="support/">Support</a>
         <a href="privacy-policy/">Privacy</a>
       </nav>
@@ -39,8 +39,7 @@
       <img class="hero__art" src="assets/orbi-hero.png" alt="Orbi astronaut facing an alien invasion" width="1024" height="500">
       <div class="hero__shade" aria-hidden="true"></div>
       <div class="hero__content">
-        <p class="eyebrow">Arena survival on Android</p>
-        <h1 id="hero-title">ORBI</h1>
+        <h1 class="visually-hidden" id="hero-title">ORBI</h1>
         <p class="hero__copy">Survive the rift, evolve your arsenal, and turn every run into a new build.</p>
         <div class="hero__actions">
           <a class="button button--primary" href="#game">Explore the game</a>
@@ -79,26 +78,38 @@
       </div>
     </section>
 
-    <section class="section section--violet" id="screens" aria-labelledby="screens-title">
+    <section class="section section--violet" id="arsenal" aria-labelledby="arsenal-title">
       <div class="section__inner">
         <div class="section-heading">
-          <p class="eyebrow">From launch to last stand</p>
-          <h2 id="screens-title">The run at a glance.</h2>
-          <p>Choose your objective, step into the arena, and bring the rewards back to your next attempt.</p>
+          <p class="eyebrow">Build your run</p>
+          <h2 id="arsenal-title">Every upgrade changes the fight.</h2>
+          <p>Turn a simple shot into a layered combat build with weapons, elements, and defensive systems that work together.</p>
         </div>
-        <div class="gallery">
-          <figure>
-            <img src="assets/screen-menu.jpg" alt="Orbi main menu with Space Rank and contract progress" width="720" height="1536" loading="lazy">
-            <figcaption>Prepare your next run</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/screen-combat.jpg" alt="Orbi hero fighting enemies in the arena" width="720" height="1536" loading="lazy">
-            <figcaption>Adapt under pressure</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/screen-results.jpg" alt="Orbi run results with rewards and rank progress" width="720" height="1536" loading="lazy">
-            <figcaption>Earn progress every run</figcaption>
-          </figure>
+        <div class="arsenal-grid">
+          <article class="arsenal-item">
+            <img src="assets/spread_shot.png" alt="" width="128" height="128" loading="lazy">
+            <div><h3>Spread Shot</h3><p>Cover more angles with every attack.</p></div>
+          </article>
+          <article class="arsenal-item">
+            <img src="assets/orbit_blades.png" alt="" width="128" height="128" loading="lazy">
+            <div><h3>Orbit Blades</h3><p>Cut through enemies that get too close.</p></div>
+          </article>
+          <article class="arsenal-item">
+            <img src="assets/chain_lightning.png" alt="" width="128" height="128" loading="lazy">
+            <div><h3>Chain Lightning</h3><p>Jump electric damage across a packed swarm.</p></div>
+          </article>
+          <article class="arsenal-item">
+            <img src="assets/poison_element.png" alt="" width="128" height="128" loading="lazy">
+            <div><h3>Poison</h3><p>Keep dealing damage after the first hit.</p></div>
+          </article>
+          <article class="arsenal-item">
+            <img src="assets/ice_element.png" alt="" width="128" height="128" loading="lazy">
+            <div><h3>Frost</h3><p>Slow threats and control the space around you.</p></div>
+          </article>
+          <article class="arsenal-item">
+            <img src="assets/energy_shield.png" alt="" width="128" height="128" loading="lazy">
+            <div><h3>Energy Shield</h3><p>Create room to recover when pressure peaks.</p></div>
+          </article>
         </div>
       </div>
     </section>
