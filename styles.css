@@ -258,6 +258,100 @@ a {
   text-transform: uppercase;
 }
 
+.game-showcase {
+  position: relative;
+  overflow: hidden;
+  padding: 92px 0;
+  background: #121722;
+  border-top: 1px solid rgba(88, 231, 238, 0.26);
+  border-bottom: 1px solid rgba(255, 194, 72, 0.22);
+}
+
+.game-showcase__inner {
+  width: min(1320px, calc(100% - 40px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(620px, 1.2fr) minmax(340px, 0.8fr);
+  align-items: center;
+  gap: clamp(44px, 7vw, 104px);
+}
+
+.game-showcase__phones {
+  position: relative;
+  min-height: 670px;
+}
+
+.phone-shot {
+  position: absolute;
+  top: 0;
+  width: min(42%, 286px);
+  aspect-ratio: 1080 / 2340;
+  margin: 0;
+  overflow: hidden;
+  border: 8px solid #090b11;
+  border-radius: 36px;
+  background: #090b11;
+  box-shadow: 0 28px 54px rgba(0, 0, 0, 0.48), 0 0 0 2px #3b4251;
+}
+
+.phone-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.phone-shot--menu {
+  top: 56px;
+  left: 1%;
+  z-index: 1;
+  transform: rotate(-4deg);
+}
+
+.phone-shot--gameplay {
+  left: 29%;
+  z-index: 3;
+}
+
+.phone-shot--rank {
+  top: 62px;
+  right: 1%;
+  z-index: 2;
+  transform: rotate(4deg);
+}
+
+.game-showcase__copy h2 {
+  margin: 0;
+  color: #e6e9ee;
+  font-size: clamp(64px, 8vw, 116px);
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-shadow: 0 6px 0 #424956;
+}
+
+.game-showcase__copy > p:not(.eyebrow) {
+  max-width: 560px;
+  margin: 28px 0 0;
+  color: #c4cad4;
+  font-size: 18px;
+}
+
+.game-showcase__copy h3 {
+  margin: 34px 0 12px;
+  color: var(--yellow);
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.game-showcase__copy ul {
+  margin: 0;
+  padding-left: 22px;
+  color: #eef1f5;
+}
+
+.game-showcase__copy li + li {
+  margin-top: 9px;
+}
+
 .section {
   padding: 88px 0;
 }
@@ -606,6 +700,24 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .game-showcase {
+    padding: 72px 0;
+  }
+
+  .game-showcase__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .game-showcase__phones {
+    width: min(680px, 100%);
+    min-height: 630px;
+    margin: 0 auto;
+  }
+
+  .game-showcase__copy {
+    width: min(620px, 100%);
+  }
+
   .feature {
     min-height: 0;
   }
@@ -624,6 +736,7 @@ a {
 @media (max-width: 560px) {
   .site-header__inner,
   .hero__content,
+  .game-showcase__inner,
   .section__inner,
   .cta-band__inner,
   .site-footer__inner,
@@ -661,6 +774,43 @@ a {
   .hero__actions,
   .button {
     width: 100%;
+  }
+
+  .game-showcase {
+    padding: 58px 0 64px;
+  }
+
+  .game-showcase__phones {
+    min-height: min(540px, 116vw);
+  }
+
+  .phone-shot {
+    width: 47%;
+    border-width: 5px;
+    border-radius: 24px;
+  }
+
+  .phone-shot--menu {
+    top: 42px;
+    left: -5%;
+  }
+
+  .phone-shot--gameplay {
+    left: 26.5%;
+  }
+
+  .phone-shot--rank {
+    top: 44px;
+    right: -5%;
+  }
+
+  .game-showcase__copy h2 {
+    font-size: 68px;
+  }
+
+  .game-showcase__copy > p:not(.eyebrow) {
+    margin-top: 22px;
+    font-size: 17px;
   }
 
   .section {
