@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "platforms": {
+    "android": {"min_supported_build": 1, "latest_build": 3},
+    "ios": {"min_supported_build": 1, "latest_build": 3}
+  },
+  "balance": {
+    "url": "https://orbi.obriystudio.app/updates/balance-v1.json",
+    "sha256": "c7b61d5e9f3d372734fd66e44cd3111142bb71d6995c5f9453d638cdb8356e21",
+    "min_client_build": 3,
+    "max_client_build": 3
+  }
+}
