@@ -1,43 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1e1545">
-  <meta name="description" content="Support information for the Orbi mobile game.">
-  <title>Support - Orbi</title>
-  <base href="/">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbi Support</title>
   <link rel="canonical" href="https://orbi.obriystudio.app/support/">
-  <link rel="icon" href="assets/orbi-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <style>
+    :root { color-scheme:light dark; --bg:#f7f8fb; --text:#171923; --muted:#5f6675; --line:#d9dde7; --accent:#087b8f; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#101218; --text:#f3f5f8; --muted:#b2b8c5; --line:#343947; --accent:#58d9eb; } }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(780px,calc(100% - 32px)); margin:auto; padding:40px 0 64px; } nav { display:flex; gap:18px; margin-bottom:28px; font-size:14px; }
+    a { color:var(--accent); font-weight:650; } h1 { margin:0 0 6px; font-size:clamp(32px,7vw,48px); line-height:1.1; letter-spacing:0; }
+    h2 { margin:34px 0 8px; font-size:22px; line-height:1.25; letter-spacing:0; } p,ul { margin:8px 0; } .muted,footer { color:var(--muted); }
+    header { padding-bottom:24px; border-bottom:1px solid var(--line); } footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--line); font-size:14px; }
+  </style>
 </head>
-<body class="legal-page">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="site-header__inner"><a class="brand" href="index.html" aria-label="Orbi home"><img src="assets/orbi-icon.png" alt="" width="38" height="38"><span>ORBI</span></a><button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation">Menu</button><nav class="site-nav" id="site-navigation" data-navigation aria-label="Main navigation"><a href="index.html">Game</a><a href="privacy-policy.html">Privacy</a><a href="terms-of-service.html">Terms</a><a href="cookies-policy.html">Cookies</a></nav></div></header>
-
-  <main id="main">
-    <header class="legal-hero"><div class="legal-hero__inner"><p class="eyebrow">Help center</p><h1>Orbi Support</h1><p>Answers for the current Android release.</p></div></header>
-    <article class="legal-content">
-      <div class="legal-summary"><strong>Need help?</strong> Email <a href="mailto:support@obriystudio.app">support@obriystudio.app</a>. Include your device model, Android version, Orbi version, and a short description of what happened. Do not send passwords or payment-card information.</div>
-
-      <div class="support-grid">
-        <section class="support-item"><h2>Where is my progress?</h2><p>Orbi currently saves progress on the device. Clearing app storage or uninstalling the Game may remove it. Cloud save is not active in version 1.0.0.</p></section>
-        <section class="support-item"><h2>Does Orbi need internet?</h2><p>Core gameplay is designed to work without a constant connection. Internet access may be needed for analytics delivery, crash reports, support links, store services, and required update checks.</p></section>
-        <section class="support-item"><h2>Why is an update required?</h2><p>A required update may be used for compatibility, stability, security, or store compliance. If the update screen appears, install the latest public Google Play version before continuing.</p></section>
-        <section class="support-item"><h2>How do I delete local data?</h2><p>Use Android Settings → Apps → Orbi → Storage → Clear storage, or uninstall Orbi. This removes local saves and settings from that device.</p></section>
-        <section class="support-item"><h2>Are ads or purchases active?</h2><p>No. Version 1.0.0 does not include active advertising or real-money purchases. Any future release that adds them will update the store disclosures and Privacy Policy first.</p></section>
-        <section class="support-item"><h2>How do I report a bug?</h2><p>Describe what you were doing, what you expected, and what happened. A screenshot or short screen recording can help, but avoid including private information.</p></section>
-      </div>
-
-      <h2>Privacy Requests</h2>
-      <p>For privacy questions or rights requests, use the same support address with the subject “Privacy Request”. See the <a href="privacy-policy.html">Privacy Policy</a> for available choices and limitations caused by the absence of named accounts.</p>
-
-      <h2>Legal Documents</h2>
-      <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li><li><a href="cookies-policy.html">Cookies Policy</a></li></ul>
-    </article>
-  </main>
-
-  <footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__top"><div><p class="site-footer__title">ORBI</p><p class="site-footer__contact">A game by OBRIY STUDIO</p></div><nav class="footer-links" aria-label="Legal navigation"><a href="index.html">Home</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a><a href="cookies-policy.html">Cookies Policy</a></nav></div><div class="site-footer__bottom">© 2026 OBRIY STUDIO. All rights reserved.</div></div></footer>
-</body>
-</html>
+<body><main>
+  <nav><a href="/privacy-policy/">Privacy</a><a href="/terms-of-service/">Terms</a><a href="/support/">Support</a></nav>
+  <header><h1>Orbi Support</h1><p class="muted">Android | Updated November 3, 2026.</p></header>
+  <h2>Contact</h2><p>Email <a href="mailto:support@obriystudio.app">support@obriystudio.app</a>.</p>
+  <p>Include the app version, Android version, device model, mode, approximate time and reproduction steps. A screenshot or recording can help. Do not send passwords, payment details, advertising IDs or sensitive information.</p>
+  <h2>Local Progress And Deletion</h2><p>On Android, use Settings, Apps, Orbi, Storage, Clear storage (names may vary). This removes local progress and settings. Platform backups or restored app data can restore saves. Manage backups separately in device or account settings.</p>
+  <p>This release has no Orbi accounts, cloud saves or online ranking. Support cannot promise recovery of deleted local progress. Deleting the app does not delete previously collected provider records or support correspondence. For privacy access or deletion requests, email the contact above; applicable rights and limits are explained in the Privacy Policy.</p>
+  <h2 id="privacy-requests">Privacy Requests</h2>
+  <p>To request access, correction or deletion of data, email <a href="mailto:support@obriystudio.app?subject=Orbi%20privacy%20request">support@obriystudio.app</a> with the subject "Orbi privacy request" and describe what you want to request. No Orbi account or login is needed. Include the app version and approximate dates if known. We may ask for limited information needed to locate relevant records or verify the request; never send passwords or payment details. Requests are assessed under applicable law. Some records may need to be retained for legal or security reasons, and anonymous records may not be identifiable. Provider-specific privacy links are in the Privacy Policy.</p>
+  <h2>Purchases And Rewarded Ads</h2><p>Android supports optional rewarded ads for the displayed in-game benefit. There are no real-money purchases, subscriptions, banners, forced interstitials or app-open ads. Ad availability is not guaranteed. A failed or early-closed ad without confirmed completion does not earn a reward. Closing after confirmed completion does not itself cancel a reward. For a missing reward, send the placement and approximate time, not device identifiers. Ordinary play and rewards must not require tracking permission.</p>
+  <h2>Reminders And Privacy Choices</h2><p>Return reminders are local notifications, not remote pushes. Disable them in game settings or device notification settings. Where Analytics is enabled, reminder opens can be recorded. Gameplay Analytics can be disabled in Settings. Advertising privacy options are available when required by the SDK; device advertising controls are separate choices. The Analytics switch does not change your advertising privacy choice.</p>
+  <h2>Configuration Updates</h2><p>Automatic downloads are limited to HTTPS versioned balance and minimum-build JSON, with no code or asset OTA downloads. They are not cloud saves and can use network data and local cache storage.</p>
+  <footer>OBRIY STUDIO · Orbi</footer>
+</main></body></html>
